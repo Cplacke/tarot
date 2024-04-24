@@ -11,6 +11,7 @@ export const App = () => {
             </head>
             <body>
                 <h1 class="text-center"> Fortune Teller </h1>
+                <h3 class="text-center"> Click to reveal your Tarot reading for the answer you desire  </h3>
                 <div class="d-flex">
 
                     <div class="mx-auto w-1/3">
