@@ -1,4 +1,4 @@
-import { getTarotDeck, cardback } from '../tarot/deck.ts'
+import { getTarotDeck, cardBack } from '../tarot/deck.ts'
 
 export const Home = () => {
     const deck = getTarotDeck();
@@ -6,7 +6,7 @@ export const Home = () => {
         <html class="tarot-bg">
             <head>
                 <link rel="stylesheet" href="/assets/style/main.css"/>
-                <script src="/assets/script/main.js"></script>
+                <script src="/assets/script/client.js"></script>
             </head>
             <body>
                 <h1 class="text-center"> The Fortune Teller </h1>
@@ -15,34 +15,34 @@ export const Home = () => {
                 <div class="d-flex">
                     <div class="mx-auto">
                         <h2 class="text-center"> Three Card Spread </h2>
-                        <img class="card d-block mx-auto pointer scale" src="${cardback}" 
+                        <img class="card d-block mx-auto pointer scale" src="${cardBack}" 
                             onclick="window.location.href = '/reading/three'"
                             style="filter: hue-rotate(130deg)"
                         />
                     </div>
                     <div class="mx-auto">
                         <h2 class="text-center"> Five Card Spread </h2>
-                        <img class="card d-block mx-auto pointer scale" src="${cardback}" 
+                        <img class="card d-block mx-auto pointer scale" src="${cardBack}" 
                             onclick="window.location.href = '/reading/five'"
                             style="filter: hue-rotate(240deg)"
                         />
                     </div>
                     <div class="mx-auto">
                         <h2 class="text-center"> Mirror Card Spread </h2>
-                        <img class="card d-block mx-auto pointer scale" src="${cardback}" 
+                        <img class="card d-block mx-auto pointer scale" src="${cardBack}" 
                             onclick="window.location.href = '/reading/mirror'"
                             style="filter: hue-rotate(60deg)"
                         />
                     </div>
                     <div class="mx-auto">
-                        <h2 class="text-center"> Explore All Cards </h2>
-                        <img class="card d-block mx-auto pointer scale" src="${cardback}" 
+                        <h2 class="text-center"> Explore Deck </h2>
+                        <img class="card d-block mx-auto pointer scale" src="${cardBack}" 
                             onclick="window.location.href = '/tarot/index'"
                             style="filter: hue-rotate(180deg)"
                         />
                     </div>
                 <div>
-            
+
             </body>
         </html>
     `

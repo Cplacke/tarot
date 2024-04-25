@@ -1,4 +1,4 @@
-export const cardback = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Waite%E2%80%93Smith_Tarot_Roses_and_Lilies_cropped.jpg/600px-Waite%E2%80%93Smith_Tarot_Roses_and_Lilies_cropped.jpg";
+export const cardBack = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Waite%E2%80%93Smith_Tarot_Roses_and_Lilies_cropped.jpg/600px-Waite%E2%80%93Smith_Tarot_Roses_and_Lilies_cropped.jpg";
 
 const major = [
   "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/RWS_Tarot_00_Fool.jpg/600px-RWS_Tarot_00_Fool.jpg",

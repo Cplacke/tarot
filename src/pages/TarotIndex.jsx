@@ -7,7 +7,7 @@ export const TarotIndex = () => {
         <html class="tarot-bg">
             <head>
                 <link rel="stylesheet" href="/assets/style/main.css"/>
-                <script src="/assets/script/main.js"></script>
+                <script src="/assets/script/client.js"></script>
             </head>
             <body>
                 <h1 class="text-center"> Tarot Card Index </h1>

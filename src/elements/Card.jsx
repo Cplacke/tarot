@@ -1,9 +1,9 @@
-import { cardback } from '../tarot/deck.ts'
+import { cardBack } from '../tarot/deck.ts'
 
-export const Card = (title, card, show=false) => {
+export const Card = (title, card) => {
     return `
         <h2 class="text-center"> ${title} </h2>
-        <img class="card d-block mx-auto pointer" face="${card.image}" src="${cardback}"
+        <img class="card d-block mx-auto pointer" face="${card.image}" src="${cardBack}"
             onclick="reveal(event, '${title.replace(/\s+/g, '-')}')"
         />
         <h3 id="${title.replace(/\s+/g, '-')}-h3" class="hidden text-center"> ${card.name} </h3>
