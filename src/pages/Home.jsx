@@ -28,6 +28,13 @@ export const Home = () => {
                         />
                     </div>
                     <div class="mx-auto">
+                        <h2 class="text-center"> Mirror Card Spread </h2>
+                        <img class="card d-block mx-auto pointer scale" src="${cardback}" 
+                            onclick="window.location.href = '/reading/mirror'"
+                            style="filter: hue-rotate(60deg)"
+                        />
+                    </div>
+                    <div class="mx-auto">
                         <h2 class="text-center"> Explore All Cards </h2>
                         <img class="card d-block mx-auto pointer scale" src="${cardback}" 
                             onclick="window.location.href = '/tarot/index'"

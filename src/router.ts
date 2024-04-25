@@ -1,6 +1,6 @@
 
 import { getHeaders } from './util.ts'
-import { ThreeTarotReading, FiveTarotReading } from './pages/TarotReading.jsx'
+import { ThreeTarotReading, FiveTarotReading, MirrorTarotReading } from './pages/TarotReading.jsx'
 import { TarotIndex } from './pages/TarotIndex.jsx'
 import { Home } from './pages/Home.jsx'
 
@@ -25,6 +25,11 @@ export const router = async (req: Request) => {
     if (url.pathname === '/reading/five') {
         url.pathname = '/reading.html';
         body = FiveTarotReading();
+        statusCode = 200;
+    } else
+    if (url.pathname === '/reading/mirror') {
+        url.pathname = '/reading.html';
+        body = MirrorTarotReading();
         statusCode = 200;
     } else
 

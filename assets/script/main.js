@@ -1,8 +1,6 @@
 
 
 const reveal = (event, title) => {
-    console.info(event, title);
-
     const img = event.target;
     const face = img.getAttribute('face');
     img.classList.add('flip');
@@ -16,4 +14,19 @@ const reveal = (event, title) => {
         }
     }, 600)
 
+}
+
+const filterTarots = (suite) => {
+    if (!suite) {
+        document.querySelectorAll('[tarot-index]').forEach((ele) => {
+            ele.classList.remove('hidden');
+        });
+        return;
+    }
+    document.querySelectorAll('[tarot-index]').forEach((ele) => {
+        ele.classList.add('hidden');
+    });
+    document.querySelectorAll(`[tarot-index][suite="${suite}"]`).forEach((ele) => {
+        ele.classList.remove('hidden');
+    });
 }
