@@ -34,16 +34,33 @@ body {
     margin: 30px 50px;
 }
 
+@keyframes spin {
+    0% {
+        transform: rotateY(0deg) rotateX(0deg);
+    }
+    100% {
+        transform: rotateY(360deg) rotateX(2deg);
+    }
+}
+@keyframes reveal {
+    0% {
+        transform: rotateY(90deg);
+    }
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+
 .card {
     height: 450px;
-    transition: transform 0.6s;
+    /* transition: transform 0.6s; */
     border-radius: 5px;
 }
 .card.flip {
-    transform: rotateY(-90deg);
+    animation: spin 1s linear infinite;
 }
 .card.show {
-    transform: rotateY(0deg);
+    animation: reveal 0.5s linear;
 }
 .card.scale:hover {
     scale: 1.05 0.6s;
