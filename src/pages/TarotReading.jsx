@@ -13,14 +13,14 @@ export const ThreeTarotReading = () => {
                 <h1 class="text-center"> Three Card Tarot Reading </h1>
                 <h3 class="text-center"> Click to reveal your Tarot reading for the answer you desire  </h3>
                 <div class="d-flex">
-                    <div class="mx-auto w-1/3">
+                    <div class="mx-auto w-1/3 ">
                         ${Card('Past', reading[0])}
                     </div>  
-                    <div class="mx-auto w-1/3">
-                        ${Card('Present', reading[1])}
+                    <div class="mx-auto w-1/3 delay-1">
+                        ${Card('Present', reading[1], 'delay-1')}
                     </div>  
-                    <div class="mx-auto w-1/3">
-                        ${Card('Future', reading[2])}
+                    <div class="mx-auto w-1/3 delay-2">
+                        ${Card('Future', reading[2], 'delay-2')}
                     </div>  
                 </div>
             </body>
