@@ -1,6 +1,8 @@
 
 import { getHeaders } from './util.ts'
-import { App } from './pages/App.jsx'
+import { ThreeTarotReading, FiveTarotReading } from './pages/TarotReading.jsx'
+import { TarotIndex } from './pages/TarotIndex.jsx'
+import { Home } from './pages/Home.jsx'
 
 export const router = async (req: Request) => {
 
@@ -10,8 +12,26 @@ export const router = async (req: Request) => {
     
     // homepage
     if (url.pathname === '/') {
-        url.pathname = '/app.html';
-        body = App();
+        url.pathname = '/home.html';
+        body = Home();
+        statusCode = 200;
+    } else
+
+    if (url.pathname === '/reading/three') {
+        url.pathname = '/reading.html';
+        body = ThreeTarotReading();
+        statusCode = 200;
+    } else
+    if (url.pathname === '/reading/five') {
+        url.pathname = '/reading.html';
+        body = FiveTarotReading();
+        statusCode = 200;
+    } else
+
+    // card index
+    if (url.pathname === '/tarot/index') {
+        url.pathname = '/index.html';
+        body = TarotIndex();
         statusCode = 200;
     } else
 

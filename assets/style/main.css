@@ -35,7 +35,7 @@ body {
 }
 
 .card {
-    height: 35%;
+    height: 450px;
     transition: transform 0.6s;
     border-radius: 5px;
 }
@@ -45,9 +45,20 @@ body {
 .card.show {
     transform: rotateY(0deg);
 }
+.card.scale:hover {
+    scale: 1.05 0.6s;
+}
+
+.caption {
+    background-color: bisque;
+    color: black;
+    border-radius: 5px;
+    padding: 5px
+}
 
 
 .d-flex { display: flex; }
+.flex-wrap { flex-wrap: wrap; }
 .d-block { display: block; }
 .hidden { display: none; }
 .text-center { text-align: center; }
@@ -57,9 +68,13 @@ body {
 .p-2 { padding: 10px; }
 
 .w-1\/3 { width: 33%; }
+.w-1\/4 { width: 25%; }
 @media (max-width: 1000px) {
     .w-1\/3 {
         width: 100%;
+    }
+    .w-1\/4 {
+        width: 50%;
     }
     .d-flex {
         display: block;
