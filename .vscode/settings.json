@@ -1,5 +1,6 @@
 {
     "deno.enable": true,
+    "deno.path": "/opt/homebrew/bin//deno",
 
     "editor.tokenColorCustomizations": {
         "comments": "#592c2d",

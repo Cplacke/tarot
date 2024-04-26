@@ -22,16 +22,19 @@
 
 h1, h3 {
     font-family: 'Tarot';
+    padding: 7px 0;
 }
 h3 {
     color: #b8b8a1;
 }
 h2, h4 {
     font-family: 'BlackChancery';
+    padding: 5px 0;
 }
 
 body {
     margin: 30px 50px;
+    padding-bottom: 150px;
 }
 
 @keyframes spin {
@@ -51,21 +54,13 @@ body {
     }
 }
 @keyframes deal {
-    /* 0% {
-        transform: translate(0, 100vh); 
-    }
-    100% {
-        transform: translate(0, 0); 
-    } */
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
-/* .card.delay-1 { animation-delay: 0.25s; }
-.card.delay-2 { animation-delay: 0.5s; } */
 
 .card {
     animation: deal 2s ease-in;
-    height: 450px;
+    height: 70vh;
     border-radius: 5px;
 }
 .card.flip {
@@ -97,7 +92,40 @@ body {
 }
 
 
-.d-flex { display: flex; }
+/* LARGE SCREEN RESPONSIVE */
+@media (min-width: 992px) {
+    .w-100.w-lg-33 {
+        width: 33% !important;
+    }
+    .w-lg-25 {
+        width: 25% !important;
+    }
+    .card {
+        height: 450px !important;
+    }
+}
+
+/* SMALL SCREEN RESPONSIVE */
+@media (max-width: 992px) {
+    h1 { font-size: 5rem !important; }
+    h2 { font-size: 4rem !important; }
+    h3 { font-size: 3rem !important; }
+    h4 { font-size: 2.5rem !important; }
+    body { font-size: 2rem !important; }
+    [tarot-index] p {
+        text-align: center;
+    }
+    h1, h3 {
+        padding: 30px 0;
+    }
+    h2, h4 {
+        padding: 20px 0;
+    }
+    
+}
+
+
+/* .d-flex { display: flex; }
 .flex-wrap { flex-wrap: wrap; }
 .d-block { display: block; }
 .hidden { display: none; }
@@ -126,4 +154,4 @@ body {
     }
 }
 
-.pointer { cursor: pointer; }
+.pointer { cursor: pointer; } */

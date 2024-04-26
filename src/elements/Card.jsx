@@ -6,8 +6,8 @@ export const Card = (title, card, classList='') => {
         <img class="card d-block mx-auto pointer ${classList}" face="${card.image}" src="${cardBack}"
             onclick="reveal(event, '${title.replace(/\s+/g, '-')}')"
         />
-        <h3 id="${title.replace(/\s+/g, '-')}-h3" class="hidden text-center"> ${card.name} </h3>
-        <p id="${title.replace(/\s+/g, '-')}-p" class="hidden p-2">${card.interpretation}</p>
+        <h3 id="${title.replace(/\s+/g, '-')}-h3" class="d-none text-center"> ${card.name} </h3>
+        <p id="${title.replace(/\s+/g, '-')}-p" class="d-none p-2">${card.interpretation}</p>
     `
 }
 
