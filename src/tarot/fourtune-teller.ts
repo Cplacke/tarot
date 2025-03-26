@@ -1,16 +1,23 @@
 import { getTarotDeck } from './deck.ts';
 import shuffleSeed from 'npm:shuffle-seed';
 
-export const getReading = (count: number) => {
+export interface readingOptions {
+    count: number,
+    reverse: boolean,
+    majorOnly: boolean
+}
 
+export const getReading = (opts: readingOptions) => {
     const seed = Date.now();
-    let deck = getTarotDeck();
+    let deck = getTarotDeck(opts?.majorOnly);
 
     // reverse shuffle some values
     deck = deck.map((card) => {
-        const rand = Math.random()*10;
-        if (rand < 2.5) {
-            // card.reversed = true;
+        if (opts?.reverse) {
+            const rand = Math.random()*10;
+            if (rand < 2.5) {
+                card.reversed = true;
+            }
         }
         return card;
     })
@@ -20,5 +27,5 @@ export const getReading = (count: number) => {
     deck = shuffleSeed.shuffle(deck, seed)
 
 
-    return deck.slice(0, count);
+    return deck.slice(0, opts.count);
 }

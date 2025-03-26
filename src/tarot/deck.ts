@@ -717,17 +717,24 @@ const tarotDeck = [
   }
 ]
 
-export const getTarotDeck = () => {
-  const deck = tarotDeck.map((card) => {
-    return {
-      ...card,
-      meaning: {
-        // @ts-ignore: card names
-        upright: meanings[card.suite].cards[card.name].upright,
-        // @ts-ignore: card names
-        reversed: meanings[card.suite].cards[card.name].reversed,
+export const getTarotDeck = (majorOnly: boolean) => {
+  const deck = tarotDeck
+    .filter((card) => {
+      if (majorOnly) {
+        return card.suite === 'major';
       }
-    }
-  })
+      return true;
+    })
+    .map((card) => {
+      return {
+        ...card,
+        meaning: {
+          // @ts-ignore: card names
+          upright: meanings[card.suite].cards[card.name].upright,
+          // @ts-ignore: card names
+          reversed: meanings[card.suite].cards[card.name].reversed,
+        }
+      }
+    });
   return [ ...deck ];
 }
