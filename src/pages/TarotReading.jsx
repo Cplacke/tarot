@@ -16,8 +16,9 @@ export const ThreeTarotReading = () => {
             </head>
             <body class="tarot-bg">
                 <h1 class="text-center"> Three Card Tarot Reading </h1>
+                <p class="p-2 w-100 w-lg-75 mx-auto caption m-0"> A three-card tarot reading is a simple yet powerful way to gain insight into a situation or question. It typically involves drawing three cards to represent the past, present, and future. </p>
                 <h3 class="text-center"> Click to reveal your Tarot reading for the answer you desire  </h3>
-                <div class="d-flex flex-wrap">
+                <div class="d-flex flex-wrap mt-5">
                     <div class="mx-auto w-100 w-lg-33">
                         ${Card('Past', reading[0])}
                     </div>  
@@ -48,8 +49,9 @@ export const FiveTarotReading = () => {
             </head>
             <body class="tarot-bg">
                 <h1 class="text-center"> Five Card Tarot Reading </h1>
+                <p class="p-2 w-100 w-lg-75 mx-auto caption m-0"> A five-card tarot reading offers a more detailed exploration of a situation or question compared to a three-card reading. It typically involves drawing five cards to represent different aspects of the issue at hand. </p>
                 <h3 class="text-center"> Click to reveal your Tarot for determining a course of action  </h3>
-                <div class="d-flex">
+                <div class="d-flex mt-5">
                     <div class="mx-auto w-100 w-lg-33">
                         ${Card('Potential', reading[4])}
                     </div>  
@@ -89,9 +91,10 @@ export const MirrorTarotReading = () => {
             
             </head>
             <body class="tarot-bg">
-                <h1 class="text-center"> Five Card Tarot Reading </h1>
+                <h1 class="text-center"> Mirror Spread Tarot Reading </h1>
+                <p class="p-2 w-100 w-lg-75 mx-auto caption m-0"> A relationship mirror tarot reading is specifically designed to explore and understand the dynamics within a relationship. This spread typically involves drawing cards to reflect the perspectives and feelings of both partners. </p>
                 <h3 class="text-center"> Click to reveal your Tarot for determining a course of action  </h3>
-                <div class="d-flex">
+                <div class="d-flex mt-5">
                     <div class="mx-auto w-100 w-lg-33">
                         ${Card('Yourself', reading[0])}
                     </div>  

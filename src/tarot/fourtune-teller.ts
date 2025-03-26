@@ -4,10 +4,21 @@ import shuffleSeed from 'npm:shuffle-seed';
 export const getReading = (count: number) => {
 
     const seed = Date.now();
-    const deck = getTarotDeck();
+    let deck = getTarotDeck();
 
-    const shuffle1 = shuffleSeed.shuffle(deck, seed)
-    const shuffle2 = shuffleSeed.shuffle(shuffle1, seed)
+    // reverse shuffle some values
+    deck = deck.map((card) => {
+        const rand = Math.random()*10;
+        if (rand < 2.5) {
+            // card.reversed = true;
+        }
+        return card;
+    })
 
-    return shuffle2.slice(0, count);
+    // shuffle deck cards
+    deck = shuffleSeed.shuffle(deck, seed)
+    deck = shuffleSeed.shuffle(deck, seed)
+
+
+    return deck.slice(0, count);
 }

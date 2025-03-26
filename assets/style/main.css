@@ -37,12 +37,18 @@ body {
     padding-bottom: 150px;
 }
 
+.font-tarot {
+    font-family: 'Tarot';
+}
+
 @keyframes spin {
     0% {
         transform: rotateY(0deg) rotateX(0deg);
+        filter: hue-rotate(0deg);
     }
     100% {
         transform: rotateY(360deg) rotateX(2deg);
+        filter: hue-rotate(720deg);
     }
 }
 @keyframes reveal {
@@ -74,10 +80,12 @@ body {
 }
 
 .caption {
-    background-color: bisque;
-    color: black;
-    border-radius: 5px;
-    padding: 5px
+    background-color: beige;
+    color: #1d1925;
+    border-radius: 8px;
+}
+.caption * {
+    color: #1d1925;
 }
 
 .filter-btn {
@@ -94,10 +102,16 @@ body {
 
 /* LARGE SCREEN RESPONSIVE */
 @media (min-width: 992px) {
+    .w-100.w-lg-75 {
+        width: 75% !important;
+    }
+    .w-100.w-lg-50 {
+        width: 50% !important;
+    }
     .w-100.w-lg-33 {
         width: 33% !important;
     }
-    .w-lg-25 {
+    .w-100.w-lg-25 {
         width: 25% !important;
     }
     .card {
@@ -124,6 +138,10 @@ body {
     
 }
 
+
+.rotate-180 {
+    rotate: 180deg;
+}
 
 /* .d-flex { display: flex; }
 .flex-wrap { flex-wrap: wrap; }
@@ -154,4 +172,6 @@ body {
     }
 }
 
-.pointer { cursor: pointer; } */
+*/
+
+.pointer { cursor: pointer; } 
