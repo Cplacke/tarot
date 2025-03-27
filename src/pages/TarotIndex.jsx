@@ -16,13 +16,13 @@ export const TarotIndex = () => {
             <body class="tarot-bg">
                 <h1 class="text-center"> Tarot Card Index </h1>
                 <h3 class="text-center"> Explore all Tarot cards contained within the deck and their possibilities </h3>
-                <div class="d-flex flex-wrap mb-4 mt-5">
-                    <h2 class="filter-btn pointer m-2 ms-auto" onclick="filterTarots()"> All </h2>
+                <div class="d-flex flex-wrap justify-content-center mb-4 mt-5">
+                    <h2 class="filter-btn pointer m-2" onclick="filterTarots()"> All </h2>
                     <h2 class="filter-btn pointer m-2" onclick="filterTarots('major')"> Major Arcana </h2>
                     <h2 class="filter-btn pointer m-2" onclick="filterTarots('Swords')"> Swords </h2>
                     <h2 class="filter-btn pointer m-2" onclick="filterTarots('Cups')"> Cups </h2>
                     <h2 class="filter-btn pointer m-2" onclick="filterTarots('Pentacles')"> Pentacles </h2>
-                    <h2 class="filter-btn pointer m-2 me-auto" onclick="filterTarots('Wands')"> Wands </h2>
+                    <h2 class="filter-btn pointer m-2" onclick="filterTarots('Wands')"> Wands </h2>
                 </div>
                 <div class="d-flex flex-wrap">
                     ${

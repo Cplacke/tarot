@@ -17,38 +17,40 @@ export const Home = () => {
                 <h3 class="text-center"> Select a reading that you would like to answer your questions </h3>
             
                 <div class="d-flex flex-wrap mx-2 mt-5">
-                    <div class="mx-auto w-100 w-lg-25">
-                        <h2 class="text-center"> Three Card Spread </h2>
-                        <img class="card d-block mx-auto my-2 pointer scale" src="${cardBack}" 
-                            onclick="window.location.href = '/reading/three'"
-                            style="filter: hue-rotate(130deg)"
-                        />
-                        <p class="p-2"> A three-card tarot reading is a simple yet powerful way to gain insight into a situation or question. It typically involves drawing three cards to represent the past, present, and future. </p>
-                    </div>
-                    <div class="mx-auto w-100 w-lg-25">
-                        <h2 class="text-center"> Five Card Spread </h2>
-                        <img class="card d-block mx-auto my-2 pointer scale" src="${cardBack}" 
-                            onclick="window.location.href = '/reading/five'"
-                            style="filter: hue-rotate(240deg)"
-                        />
-                        <p class="p-2"> A five-card tarot reading offers a more detailed exploration of a situation or question compared to a three-card reading. It typically involves drawing five cards to represent different aspects of the issue at hand. </p>
-                    </div>
-                    <div class="mx-auto w-100 w-lg-25">
-                        <h2 class="text-center"> Mirror Card Spread </h2>
-                        <img class="card d-block mx-auto my-2 pointer scale" src="${cardBack}" 
-                            onclick="window.location.href = '/reading/mirror'"
-                            style="filter: hue-rotate(60deg)"
-                        />
-                        <p class="p-2"> A relationship mirror tarot reading is specifically designed to explore and understand the dynamics within a relationship. This spread typically involves drawing cards to reflect the perspectives and feelings of both partners. </p>
-                    </div>
-                    <div class="mx-auto w-100 w-lg-25">
-                        <h2 class="text-center"> Explore Deck </h2>
-                        <img class="card d-block mx-auto my-2 pointer scale" src="${cardBack}" 
-                            onclick="window.location.href = '/tarot/index'"
-                            style="filter: hue-rotate(180deg)"
-                        />
-                        <p class="p-2"> Learning about the history, symbolism, and meanings of tarot cards can enhance your knowledge and appreciation of this ancient practice. </p>
-                    </div>
+                    ${ReadingOption({
+                        title: 'Three Card Spread',
+                        desc: 'A three-card tarot reading is a simple yet powerful way to gain insight into a situation or question. It typically involves drawing three cards to represent the past, present, and future.',
+                        route: 'reading/three',
+                        hueRotate: 130,
+                    })}
+
+                    ${ReadingOption({
+                        title: 'Five Card Spread',
+                        desc: 'A five-card tarot reading offers a more detailed exploration of a situation or question compared to a three-card reading. It typically involves drawing five cards to represent different aspects of the issue at hand.',
+                        route: 'reading/five',
+                        hueRotate: 240,
+                    })}
+
+                    ${ReadingOption({
+                        title: 'Mirror Card Spread',
+                        desc: 'A relationship mirror tarot reading is specifically designed to explore and understand the dynamics within a relationship. This spread typically involves drawing cards to reflect the perspectives and feelings of both partners.',
+                        route: 'reading/mirror',
+                        hueRotate: 60,
+                    })}
+
+                    ${ReadingOption({
+                        title: 'Major Arcana Reading',
+                        desc: 'This type of reading is ideal for exploring profound themes, gaining deep insights into your personal journey, and receiving guidance on important decisions and transformative experiences.',
+                        route: 'reading/major',
+                        hueRotate: 220,
+                    })}
+
+                    ${ReadingOption({
+                        title: 'Explore Deck',
+                        desc: 'Learning about the history, symbolism, and meanings of tarot cards can enhance your knowledge and appreciation of this ancient practice.',
+                        route: 'tarot/index',
+                        hueRotate: 180,
+                    })}
                 <div>
 
                 <div class="caption mx-5 mt-5 px-3 py-4"> 
@@ -59,5 +61,26 @@ export const Home = () => {
 
             </body>
         </html>
+    `
+}
+
+const ReadingOption = (options) => {
+    const { title, hueRotate, desc, route } = options;
+    return `
+        <div class="mx-auto w-100 w-lg-33 my-4">
+            <h2 class="text-center"> ${title} </h2>
+            <img class="card d-block mx-auto my-2 pointer scale" src="${cardBack}" 
+                onclick="
+                    this.classList.add('flip');
+                    console.log('this', this.classList);
+                    setTimeout(() => {
+                        this.classList.remove('flip');
+                        window.location.href = '${route}';
+                    }, 320);
+                "
+                style="filter: hue-rotate(${hueRotate}deg)"
+            />
+            <p class="p-2"> ${desc} </p>
+        </div>
     `
 }

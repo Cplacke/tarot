@@ -3,12 +3,13 @@ import { getHeaders } from './util.ts'
 import { ThreeTarotReading, FiveTarotReading, MirrorTarotReading, MajorTarotReading } from './pages/TarotReading.jsx'
 import { TarotIndex } from './pages/TarotIndex.jsx'
 import { Home } from './pages/Home.jsx'
+import { RouteNotFound } from './pages/404.jsx';
 
 export const router = async (req: Request) => {
 
     const url = new URL(req.url);
-    let body: string | ReadableStream<Uint8Array> = 'Route Not Found';
-    let statusCode: number = 404;
+    let body: string | ReadableStream<Uint8Array> | null = 'No Content Found';
+    let statusCode: number = 500;
     
     // homepage
     if (url.pathname === '/') {
@@ -49,6 +50,13 @@ export const router = async (req: Request) => {
     if (url.pathname.includes('assets')) {
         const file = await Deno.open(`.${url.pathname}`, { read: true });
         body = file.readable;
+        statusCode = 200;
+    } 
+    
+    // 404 page
+    else {
+        url.pathname = '/404.html';
+        body = RouteNotFound();
         statusCode = 200;
     }
 
