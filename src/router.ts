@@ -4,6 +4,7 @@ import { ThreeTarotReading, FiveTarotReading, MirrorTarotReading, MajorTarotRead
 import { TarotIndex } from './pages/TarotIndex.jsx'
 import { Home } from './pages/Home.jsx'
 import { RouteNotFound } from './pages/404.jsx';
+import { registerNewUser, addNewReading } from './api/register.ts'
 
 export const router = async (req: Request) => {
 
@@ -51,7 +52,15 @@ export const router = async (req: Request) => {
         const file = await Deno.open(`.${url.pathname}`, { read: true });
         body = file.readable;
         statusCode = 200;
-    } 
+    } else
+
+    // API routes
+    if (url.pathname === ('/api/register')) {
+        return await registerNewUser(req);
+    } else
+    if (url.pathname === ('/api/add/reading')) {
+        return await addNewReading(req);
+    }
     
     // 404 page
     else {

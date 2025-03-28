@@ -28,3 +28,32 @@ const filterTarots = (suite) => {
         ele.classList.remove('d-none');
     });
 }
+
+const addReadingResults = () => {
+    const type = document.querySelector('#reading-type').innerText.trim();
+    const cardPositions = [ ...document.querySelectorAll('.tarot-title') ].map((ele) => ele.innerText.trim());
+    const cardNames = [ ...document.querySelectorAll('.tarot-name') ].map((ele) => ele.innerText.trim());
+
+    fetch('/api/add/reading', {
+        method: 'POST', // HTTP method
+        headers: {
+            'Content-Type': 'application/json' // Content type
+        },
+        body: JSON.stringify({
+            user: localStorage.getItem('user'),
+            data: {
+                type,
+                cards: cardPositions.map((pos, i) => ({
+                    position: pos,
+                    name: cardNames[i]
+                }))
+            }
+        })
+    })
+        .then((res) => {
+            console.info('inserted reading :: ', type)
+        })
+        .catch((err) => {
+            console.error('error inserting reading :: ', type)
+        });
+}

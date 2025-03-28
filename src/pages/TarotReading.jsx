@@ -13,10 +13,10 @@ export const ThreeTarotReading = () => {
                 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
                 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-            
+                <script> window.onload = () => { addReadingResults(); } </script>
             </head>
             <body class="tarot-bg">
-                <h1 class="text-center"> Three Card Tarot Reading </h1>
+                <h1 id="reading-type" class="text-center"> Three Card Tarot Reading </h1>
                 ${Wisdom()}
                 <h3 class="text-center"> Click to reveal your Tarot reading for the answer you desire  </h3>
                 <div class="d-flex flex-wrap mt-5">
@@ -46,10 +46,10 @@ export const FiveTarotReading = () => {
                 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
                 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-            
+                <script> window.onload = () => { addReadingResults(); } </script>
             </head>
             <body class="tarot-bg">
-                <h1 class="text-center"> Five Card Tarot Reading </h1>
+                <h1 id="reading-type" class="text-center"> Five Card Tarot Reading </h1>
                 ${Wisdom()}
                 <h3 class="text-center"> Click to reveal your Tarot for determining a course of action  </h3>
                 <div class="d-flex mt-5">
@@ -89,10 +89,10 @@ export const MirrorTarotReading = () => {
                 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
                 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-            
+                <script> window.onload = () => { addReadingResults(); } </script>
             </head>
             <body class="tarot-bg">
-                <h1 class="text-center"> Mirror Spread Tarot Reading </h1>
+                <h1 id="reading-type" class="text-center"> Mirror Spread Tarot Reading </h1>
                 ${Wisdom()}
                 <h3 class="text-center"> Click to reveal your Tarot for determining a course of action  </h3>
                 <div class="d-flex mt-5">
@@ -145,9 +145,10 @@ export const MajorTarotReading = () => {
                 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
                 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+                <script> window.onload = () => { addReadingResults(); } </script>
             </head>
             <body class="tarot-bg">
-                <h1 class="text-center"> Major Arcana Tarot Reading </h1>
+                <h1 id="reading-type" class="text-center"> Major Arcana Tarot Reading </h1>
                 ${Wisdom()}
                 <h3 class="text-center"> Click to reveal your Tarot reading for the answer you desire </h3>
                 <div class="d-flex flex-wrap mt-5">
