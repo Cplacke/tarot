@@ -1,93 +1,93 @@
 import meanings from './tarot-cheatsheet.ts';
 
 // Orignal rider tarot cardback
-// export const cardBack = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Waite%E2%80%93Smith_Tarot_Roses_and_Lilies_cropped.jpg/600px-Waite%E2%80%93Smith_Tarot_Roses_and_Lilies_cropped.jpg";
+// export const cardBack = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Waite%E2%80%93Smith_Tarot_Roses_and_Lilies_cropped.jpg/960px-Waite%E2%80%93Smith_Tarot_Roses_and_Lilies_cropped.jpg";
 
 // Magical eye cardback
 export const cardBack = "https://www.evatarot.net/daily-tarot/images/card-back.png";
 
 const major = [
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/RWS_Tarot_00_Fool.jpg/600px-RWS_Tarot_00_Fool.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/RWS_Tarot_01_Magician.jpg/600px-RWS_Tarot_01_Magician.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/RWS_Tarot_02_High_Priestess.jpg/600px-RWS_Tarot_02_High_Priestess.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/RWS_Tarot_03_Empress.jpg/600px-RWS_Tarot_03_Empress.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/RWS_Tarot_04_Emperor.jpg/600px-RWS_Tarot_04_Emperor.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/RWS_Tarot_05_Hierophant.jpg/600px-RWS_Tarot_05_Hierophant.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/RWS_Tarot_06_Lovers.jpg/600px-RWS_Tarot_06_Lovers.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/RWS_Tarot_07_Chariot.jpg/600px-RWS_Tarot_07_Chariot.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/RWS_Tarot_08_Strength.jpg/600px-RWS_Tarot_08_Strength.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/RWS_Tarot_09_Hermit.jpg/600px-RWS_Tarot_09_Hermit.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/RWS_Tarot_10_Wheel_of_Fortune.jpg/600px-RWS_Tarot_10_Wheel_of_Fortune.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/RWS_Tarot_11_Justice.jpg/600px-RWS_Tarot_11_Justice.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/RWS_Tarot_12_Hanged_Man.jpg/600px-RWS_Tarot_12_Hanged_Man.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/RWS_Tarot_13_Death.jpg/600px-RWS_Tarot_13_Death.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/RWS_Tarot_14_Temperance.jpg/600px-RWS_Tarot_14_Temperance.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/RWS_Tarot_15_Devil.jpg/600px-RWS_Tarot_15_Devil.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/RWS_Tarot_16_Tower.jpg/600px-RWS_Tarot_16_Tower.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/RWS_Tarot_17_Star.jpg/600px-RWS_Tarot_17_Star.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/RWS_Tarot_18_Moon.jpg/600px-RWS_Tarot_18_Moon.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/RWS_Tarot_19_Sun.jpg/600px-RWS_Tarot_19_Sun.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/RWS_Tarot_20_Judgement.jpg/600px-RWS_Tarot_20_Judgement.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/RWS_Tarot_21_World.jpg/600px-RWS_Tarot_21_World.jpg"
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/RWS_Tarot_00_Fool.jpg/960px-RWS_Tarot_00_Fool.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/RWS_Tarot_01_Magician.jpg/960px-RWS_Tarot_01_Magician.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/RWS_Tarot_02_High_Priestess.jpg/960px-RWS_Tarot_02_High_Priestess.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/RWS_Tarot_03_Empress.jpg/960px-RWS_Tarot_03_Empress.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/RWS_Tarot_04_Emperor.jpg/960px-RWS_Tarot_04_Emperor.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/RWS_Tarot_05_Hierophant.jpg/960px-RWS_Tarot_05_Hierophant.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/RWS_Tarot_06_Lovers.jpg/960px-RWS_Tarot_06_Lovers.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/RWS_Tarot_07_Chariot.jpg/960px-RWS_Tarot_07_Chariot.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/RWS_Tarot_08_Strength.jpg/960px-RWS_Tarot_08_Strength.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/RWS_Tarot_09_Hermit.jpg/960px-RWS_Tarot_09_Hermit.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/RWS_Tarot_10_Wheel_of_Fortune.jpg/960px-RWS_Tarot_10_Wheel_of_Fortune.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/RWS_Tarot_11_Justice.jpg/960px-RWS_Tarot_11_Justice.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/RWS_Tarot_12_Hanged_Man.jpg/960px-RWS_Tarot_12_Hanged_Man.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/RWS_Tarot_13_Death.jpg/960px-RWS_Tarot_13_Death.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/RWS_Tarot_14_Temperance.jpg/960px-RWS_Tarot_14_Temperance.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/RWS_Tarot_15_Devil.jpg/960px-RWS_Tarot_15_Devil.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/RWS_Tarot_16_Tower.jpg/960px-RWS_Tarot_16_Tower.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/RWS_Tarot_17_Star.jpg/960px-RWS_Tarot_17_Star.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/RWS_Tarot_18_Moon.jpg/960px-RWS_Tarot_18_Moon.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/RWS_Tarot_19_Sun.jpg/960px-RWS_Tarot_19_Sun.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/RWS_Tarot_20_Judgement.jpg/960px-RWS_Tarot_20_Judgement.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/RWS_Tarot_21_World.jpg/960px-RWS_Tarot_21_World.jpg"
 ];
 
 const minor = [
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Cups01.jpg/600px-Cups01.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Cups02.jpg/600px-Cups02.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Cups03.jpg/600px-Cups03.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Cups04.jpg/600px-Cups04.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Cups05.jpg/600px-Cups05.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Cups06.jpg/600px-Cups06.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Cups07.jpg/600px-Cups07.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Cups08.jpg/600px-Cups08.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Cups09.jpg/600px-Cups09.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Cups10.jpg/600px-Cups10.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Cups11.jpg/600px-Cups11.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Cups12.jpg/600px-Cups12.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Cups13.jpg/600px-Cups13.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Cups14.jpg/600px-Cups14.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Pents01.jpg/600px-Pents01.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Pents02.jpg/600px-Pents02.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Pents03.jpg/600px-Pents03.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Pents04.jpg/600px-Pents04.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Pents05.jpg/600px-Pents05.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Pents06.jpg/600px-Pents06.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Pents07.jpg/600px-Pents07.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Pents08.jpg/600px-Pents08.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Pents09.jpg/600px-Pents09.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Pents10.jpg/600px-Pents10.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Pents11.jpg/600px-Pents11.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Pents12.jpg/600px-Pents12.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Pents13.jpg/600px-Pents13.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Pents14.jpg/600px-Pents14.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Wands01.jpg/600px-Wands01.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Wands02.jpg/600px-Wands02.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wands03.jpg/600px-Wands03.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Wands04.jpg/600px-Wands04.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Wands05.jpg/600px-Wands05.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Wands06.jpg/600px-Wands06.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Wands07.jpg/600px-Wands07.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Wands08.jpg/600px-Wands08.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Tarot_Nine_of_Wands.jpg/600px-Tarot_Nine_of_Wands.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Wands10.jpg/600px-Wands10.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Wands11.jpg/600px-Wands11.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Wands12.jpg/600px-Wands12.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Wands13.jpg/600px-Wands13.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Wands14.jpg/600px-Wands14.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Swords01.jpg/600px-Swords01.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Swords02.jpg/600px-Swords02.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Swords03.jpg/600px-Swords03.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Swords04.jpg/600px-Swords04.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Swords05.jpg/600px-Swords05.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Swords06.jpg/600px-Swords06.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Swords07.jpg/600px-Swords07.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Swords08.jpg/600px-Swords08.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Swords09.jpg/600px-Swords09.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Swords10.jpg/600px-Swords10.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Swords11.jpg/600px-Swords11.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Swords12.jpg/600px-Swords12.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Swords13.jpg/600px-Swords13.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Swords14.jpg/600px-Swords14.jpg"
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Cups01.jpg/960px-Cups01.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Cups02.jpg/960px-Cups02.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Cups03.jpg/960px-Cups03.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Cups04.jpg/960px-Cups04.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Cups05.jpg/960px-Cups05.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Cups06.jpg/960px-Cups06.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Cups07.jpg/960px-Cups07.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Cups08.jpg/960px-Cups08.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Cups09.jpg/960px-Cups09.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Cups10.jpg/960px-Cups10.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Cups11.jpg/960px-Cups11.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Cups12.jpg/960px-Cups12.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Cups13.jpg/960px-Cups13.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Cups14.jpg/960px-Cups14.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Pents01.jpg/960px-Pents01.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Pents02.jpg/960px-Pents02.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Pents03.jpg/960px-Pents03.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Pents04.jpg/960px-Pents04.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Pents05.jpg/960px-Pents05.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Pents06.jpg/960px-Pents06.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Pents07.jpg/960px-Pents07.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Pents08.jpg/960px-Pents08.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Pents09.jpg/960px-Pents09.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Pents10.jpg/960px-Pents10.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Pents11.jpg/960px-Pents11.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Pents12.jpg/960px-Pents12.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Pents13.jpg/960px-Pents13.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Pents14.jpg/960px-Pents14.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Wands01.jpg/960px-Wands01.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Wands02.jpg/960px-Wands02.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wands03.jpg/960px-Wands03.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Wands04.jpg/960px-Wands04.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Wands05.jpg/960px-Wands05.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Wands06.jpg/960px-Wands06.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Wands07.jpg/960px-Wands07.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Wands08.jpg/960px-Wands08.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Tarot_Nine_of_Wands.jpg/960px-Tarot_Nine_of_Wands.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Wands10.jpg/960px-Wands10.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Wands11.jpg/960px-Wands11.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Wands12.jpg/960px-Wands12.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Wands13.jpg/960px-Wands13.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Wands14.jpg/960px-Wands14.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Swords01.jpg/960px-Swords01.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Swords02.jpg/960px-Swords02.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Swords03.jpg/960px-Swords03.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Swords04.jpg/960px-Swords04.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Swords05.jpg/960px-Swords05.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Swords06.jpg/960px-Swords06.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Swords07.jpg/960px-Swords07.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Swords08.jpg/960px-Swords08.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Swords09.jpg/960px-Swords09.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Swords10.jpg/960px-Swords10.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Swords11.jpg/960px-Swords11.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Swords12.jpg/960px-Swords12.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Swords13.jpg/960px-Swords13.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Swords14.jpg/960px-Swords14.jpg"
 ];
 
 const tarotDeck = [
@@ -738,3 +738,19 @@ export const getTarotDeck = (majorOnly: boolean) => {
     });
   return [ ...deck ];
 }
+
+// const saveImages = async () => {
+//   const majorImages = major.map(async (url) => {
+//     const res = await fetch(url);
+//     console.info('made request to ', url);
+//     const img = await res.text();
+//     return img;
+//   })
+
+//   const images = await Promise.all(majorImages)
+//   console.info(images[0]);
+// }
+
+// console.info(':::        saveImages() running ...');
+// await saveImages();
+// console.info(':::        completed saveImages() ...');
